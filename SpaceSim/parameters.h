@@ -1,0 +1,35 @@
+#pragma once
+#ifndef PARAMETERS_H_
+#define PARAMETERS_H_
+
+//window
+#define WINDOW_WIDTH 1000
+#define WINDOW_HEIGHT 1000
+#define STAR_RENDER_DISTANCE 500
+
+//galaxy
+#define GALAXY_WIDTH 10
+#define CLUSTER_SIZE_OUTER 0.92
+#define CLUSTER_SIZE_INNER 1.0
+
+//sectors
+#define SECTOR_WIDTH 5
+
+//stars
+#define SYSTEM_CHANCE 0.05
+#define SCATTER_DECAY_RATE 25
+#define MAX_PLANETS 10
+#define O_STAR_CHANCE 0.000001
+#define B_STAR_CHANCE 0.001
+#define A_STAR_CHANCE 0.007
+#define F_STAR_CHANCE 0.02
+#define G_STAR_CHANCE 0.035
+#define K_STAR_CHANCE 0.08
+#define M_STAR_CHANCE 0.8
+#define GIANT_STAR_CHANCE 0.004
+#define WHITE_DWARF_STAR_CHANCE 0.05
+#define SUPERGIANT_STAR_CHANCE 0.000001
+
+//systems
+
+#endif
