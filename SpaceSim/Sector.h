@@ -5,6 +5,7 @@
 #include <math.h>
 #include "parameters.h"
 #include "System.h"
+#include "MathStuff.h"
 
 class System;
 
@@ -12,10 +13,6 @@ class Sector {
 private:
 	int x, y, z;
 	std::array<std::array<std::array<System*, SECTOR_WIDTH>, SECTOR_WIDTH>, SECTOR_WIDTH> systems;
-
-	float distance(int x1, int y1, int z1, int x2, int y2, int z2) {
-		return sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2) + pow(z2 - z1, 2));
-	}
 
 	float getSystemChance(int x, int y, int z) {
 		int center = (GALAXY_WIDTH * SECTOR_WIDTH) / 2;

@@ -18,7 +18,6 @@
 //stars
 #define SYSTEM_CHANCE 0.05
 #define SCATTER_DECAY_RATE 25
-#define MAX_PLANETS 10
 #define O_STAR_CHANCE 0.000001
 #define B_STAR_CHANCE 0.001
 #define A_STAR_CHANCE 0.007
@@ -31,5 +30,8 @@
 #define SUPERGIANT_STAR_CHANCE 0.000001
 
 //systems
+#define MAX_PLANETS 10
+
+#define PI 3.14159265
 
 #endif

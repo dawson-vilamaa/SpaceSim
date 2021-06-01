@@ -74,6 +74,7 @@
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>C:\Users\dfrog\source\repos\SpaceSim\SpaceSim\include;$(IncludePath)</IncludePath>
     <LibraryPath>C:\Users\dfrog\source\repos\SpaceSim\SpaceSim\lib;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>D:\User\Documents\Coding\SpaceSim\SpaceSim\lib;$(ExecutablePath)</ExecutablePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -94,7 +95,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>opengl32.lib;glu32.lib;glut32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -145,17 +146,21 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Ant.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Test.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Camera.h" />
     <ClInclude Include="Galaxy.h" />
-    <ClInclude Include="includes.h" />
+    <ClInclude Include="MathStuff.h" />
     <ClInclude Include="parameters.h" />
     <ClInclude Include="Planet.h" />
     <ClInclude Include="random.h" />
     <ClInclude Include="Sector.h" />
+    <ClInclude Include="StarCluster.h" />
     <ClInclude Include="System.h" />
+    <ClInclude Include="Vectors.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
